@@ -26,7 +26,6 @@ public class LahanParkir extends javax.swing.JFrame {
     public LahanParkir() {
         initComponents();
         setTitle("Program Parkir");
-        calendar.setTimeInMillis(System.currentTimeMillis());
         jButton1.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent e){
                 jButton1Action(e);
