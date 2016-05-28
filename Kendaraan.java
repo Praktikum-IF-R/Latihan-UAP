@@ -20,6 +20,7 @@ String jns;
 String jmmasuk;
 DefaultTableModel tabMode;
 Connection koneksi;
+    private Object jamMasuk;
 public Kendaraan() {
         initComponents();
         Object[] row= {"No.Tiket","Tgl Masuk", "No Plat", "J.Kendaraan", "Jam Masuk"};
@@ -131,7 +132,7 @@ konekdatabase();
                 jamMasuk.setText(rs.getString(5));
                 }
             else{
-                JOptionPane.showMessageDialog(null, "DATA TIDAK ADA DALAM DATABASE");
+                JOptionPane.showMessageDialog(null, "DATA TIDAK ADA ");
             }
             statement.close();
             koneksi.close();
@@ -143,5 +144,30 @@ konekdatabase();
 }
 
     private void initComponents() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
+
+    private static class platNomor {
+
+        private static void setText(String string) {
+            
+        }
+
+        private static String getText() {
+           return "";
+        }
+
+        public platNomor() {
+        }
+    }
+
+    private static class tabeldata {
+
+        private static void setModel(DefaultTableModel tabMode) {
+            
+        }
+
+        public tabeldata() {
+        }
+    }
+}
