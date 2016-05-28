@@ -961,4 +961,5 @@ public class Sistem extends javax.swing.JFrame {
     static Object kolom2[] = {" Nomor Plat ", " Tanggal "};
     DefaultTableModel mdl2 = new DefaultTableModel(kolom, baris);
 
+
 }
