@@ -12,19 +12,24 @@ package Latihan;
 import javax.swing.table.DefaultTableModel;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 
 public class Sistem extends javax.swing.JFrame {
-
+   
     String plat[] = new String[8];
     String tanggal[] = new String[8];
     SimpleDateFormat date = new SimpleDateFormat("d-MMM-yyy");
     Calendar calendar = Calendar.getInstance();
+    String time [] = {"","","","","","","",""};
+    String timex;
 
     /**
      * Creates new form Sistem
      */
     public Sistem() {
         initComponents();
+         setTitle("Program Parkir");
+        
     }
 
     /**
@@ -531,15 +536,25 @@ public class Sistem extends javax.swing.JFrame {
         jButton16.setVisible(true);
         jButton14.setVisible(false);
         tanggal[6] = date.format(calendar.getTime());
-        mdl.addRow(new Object[]{plat[6], tanggal[6]});
+        Clock();
+        time[6]=timex;
+        mdl.addRow(new Object[]{plat[6],tanggal[6]+", "+time[6]});
         jTable1.setModel(mdl);
     }//GEN-LAST:event_jButton14ActionPerformed
-
+        private void Clock() {
+        calendar.setTimeInMillis(System.currentTimeMillis());
+        int hours = calendar.get(Calendar.HOUR_OF_DAY);
+        int minutes = calendar.get(Calendar.MINUTE);
+        int seconds = calendar.get(Calendar.SECOND);
+        timex = String.valueOf(hours+":"+minutes+":"+seconds);
+    } 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
 
         jButton11.setVisible(true);
         jButton13.setVisible(false);
-        mdl2.addRow(new Object[]{plat[5], tanggal[5]});
+        Clock();
+        time[0]=timex;
+        mdl2.addRow(new Object[]{plat[5],tanggal[5]+", "+time[5]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton13ActionPerformed
@@ -549,7 +564,9 @@ public class Sistem extends javax.swing.JFrame {
         jButton12.setVisible(true);
         jButton10.setVisible(false);
         tanggal[4] = date.format(calendar.getTime());
-        mdl.addRow(new Object[]{plat[4], tanggal[4]});
+        Clock();
+        time[4]=timex;
+        mdl.addRow(new Object[]{plat[4],tanggal[4]+", "+time[4]});
         jTable1.setModel(mdl);
     }//GEN-LAST:event_jButton10ActionPerformed
 
@@ -558,7 +575,9 @@ public class Sistem extends javax.swing.JFrame {
         jButton13.setVisible(true);
         jButton11.setVisible(false);
         tanggal[5] = date.format(calendar.getTime());
-        mdl.addRow(new Object[]{plat[5], tanggal[5]});
+        Clock();
+        time[5]=timex;
+        mdl.addRow(new Object[]{plat[5],tanggal[5]+", "+time[5]});
         jTable1.setModel(mdl);
     }//GEN-LAST:event_jButton11ActionPerformed
 
@@ -566,7 +585,9 @@ public class Sistem extends javax.swing.JFrame {
 
         jButton7.setVisible(true);
         jButton9.setVisible(false);
-        mdl2.addRow(new Object[]{plat[3], tanggal[3]});
+        Clock();
+        time[0]=timex;
+        mdl2.addRow(new Object[]{plat[3],tanggal[3]+", "+time[3]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton9ActionPerformed
@@ -576,7 +597,9 @@ public class Sistem extends javax.swing.JFrame {
         jButton8.setVisible(true);
         jButton6.setVisible(false);
         tanggal[2] = date.format(calendar.getTime());
-        mdl.addRow(new Object[]{plat[2], tanggal[2]});
+        Clock();
+        time[2]=timex;
+        mdl.addRow(new Object[]{plat[2],tanggal[2]+", "+time[2]});
         jTable1.setModel(mdl);
     }//GEN-LAST:event_jButton6ActionPerformed
 
@@ -585,7 +608,9 @@ public class Sistem extends javax.swing.JFrame {
         jButton9.setVisible(true);
         jButton7.setVisible(false);
         tanggal[3] = date.format(calendar.getTime());
-        mdl.addRow(new Object[]{plat[3], tanggal[3]});
+        Clock();
+        time[3]=timex;
+        mdl.addRow(new Object[]{plat[3],tanggal[3]+", "+time[3]});
         jTable1.setModel(mdl);
 
     }//GEN-LAST:event_jButton7ActionPerformed
@@ -595,18 +620,22 @@ public class Sistem extends javax.swing.JFrame {
         jButton17.setVisible(true);
         jButton15.setVisible(false);
         tanggal[7] = date.format(calendar.getTime());
-        mdl.addRow(new Object[]{plat[7], tanggal[7]});
+        Clock();
+        time[7]=timex;
+        mdl.addRow(new Object[]{plat[7],tanggal[7]+", "+time[7]});
         jTable1.setModel(mdl);
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         plat[0] = jTextField1.getText();
-
         jButton2.setVisible(false);
         jButton3.setVisible(true);
         tanggal[0] = date.format(calendar.getTime());
-        mdl.addRow(new Object[]{plat[0], tanggal[0]});
+        Clock();
+        time[0]=timex;
+        mdl.addRow(new Object[]{plat[0],tanggal[0]+", "+time[0]});
         jTable1.setModel(mdl);
+        
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -629,15 +658,20 @@ public class Sistem extends javax.swing.JFrame {
         jButton4.setVisible(false);
         jButton5.setVisible(true);
         tanggal[1] = date.format(calendar.getTime());
-        mdl.addRow(new Object[]{plat[1], tanggal[1]});
+        Clock();
+        time[1]=timex;
+        mdl.addRow(new Object[]{plat[1],tanggal[1]+", "+time[1]});
         jTable1.setModel(mdl);
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 
         jButton2.setVisible(true);
         jButton3.setVisible(false);
-        mdl2.addRow(new Object[]{plat[0], tanggal[0]});
+        Clock();
+        time[0]=timex;
+        mdl2.addRow(new Object[]{plat[0],tanggal[0]+", "+time[0]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -646,7 +680,9 @@ public class Sistem extends javax.swing.JFrame {
 
         jButton4.setVisible(true);
         jButton5.setVisible(false);
-        mdl2.addRow(new Object[]{plat[1], tanggal[1]});
+        Clock();
+        time[1]=timex;
+        mdl2.addRow(new Object[]{plat[1],tanggal[1]+", "+time[1]});
         jTable2.setModel(mdl2);
 
 
@@ -656,7 +692,9 @@ public class Sistem extends javax.swing.JFrame {
 
         jButton6.setVisible(true);
         jButton8.setVisible(false);
-        mdl2.addRow(new Object[]{plat[2], tanggal[2]});
+        Clock();
+        time[2]=timex;
+        mdl2.addRow(new Object[]{plat[2],tanggal[2]+", "+time[2]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton8ActionPerformed
@@ -665,7 +703,9 @@ public class Sistem extends javax.swing.JFrame {
 
         jButton10.setVisible(true);
         jButton12.setVisible(false);
-        mdl2.addRow(new Object[]{plat[4], tanggal[4]});
+        Clock();
+        time[4]=timex;
+        mdl2.addRow(new Object[]{plat[4],tanggal[4]+", "+time[4]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton12ActionPerformed
@@ -673,7 +713,9 @@ public class Sistem extends javax.swing.JFrame {
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         jButton14.setVisible(true);
         jButton16.setVisible(false);
-        mdl2.addRow(new Object[]{plat[6], tanggal[6]});
+        Clock();
+        time[0]=timex;
+        mdl2.addRow(new Object[]{plat[6],tanggal[6]+", "+time[6]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton16ActionPerformed
@@ -682,7 +724,9 @@ public class Sistem extends javax.swing.JFrame {
 
         jButton15.setVisible(true);
         jButton17.setVisible(false);
-        mdl2.addRow(new Object[]{plat[7], tanggal[7]});
+        Clock();
+        time[0]=timex;
+        mdl2.addRow(new Object[]{plat[7],tanggal[7]+", "+time[7]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton17ActionPerformed
