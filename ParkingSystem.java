@@ -8,14 +8,8 @@ public class ParkingSystem extends Frame {
     JTextField nomorplat;
     JButton showData, choose1, choose2, choose3, choose4, choose5, choose6, choose7, choose8, choose9, choose10, choose11, choose12, choose13, choose14, choose15, choose16;
     public String nomorplat2[] = new String[8];
-    public int tanggal[] = new int[16];
-    public int bulan []= new int[16];
-    public int tahun[]= new int[16];
-    public int jam[]= new int[16];
     public String tanggal2[] = new String [16];
     public String jam2[]= new String [16];
-    public int menit [] = new int[16];
-    int count = 0;
     public ParkingSystem() {
         setLayout(null);
         label = new JLabel("Sistem Parkir");
