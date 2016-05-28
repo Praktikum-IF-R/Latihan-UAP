@@ -1,0 +1,17 @@
+		Data Parkir
+Nomor Plat AE1 Parkir di sektor 1 pada tanggal 28/05/2016
+Nomor Plat AE2 Parkir di sektor 2 pada tanggal 28/05/2016
+Nomor Plat AE3 Parkir di sektor 3 pada tanggal 28/05/2016
+Nomor Plat AE4 Parkir di sektor 4 pada tanggal 28/05/2016
+Nomor Plat AE5 Parkir di sektor 5 pada tanggal 28/05/2016
+Nomor Plat AE6 Parkir di sektor 6 pada tanggal 28/05/2016
+Nomor Plat AE7 Parkir di sektor 7 pada tanggal 28/05/2016
+Nomor Plat AE8 Parkir di sektor 8 pada tanggal 28/05/2016
+Nomor Plat AE1 Parkir di sektor 1 telah keluar
+Nomor Plat AE2 Parkir di sektor 2 telah keluar
+Nomor Plat AE3 Parkir di sektor 3 telah keluar
+Nomor Plat AE4 Parkir di sektor 4 telah keluar
+Nomor Plat AE5 Parkir di sektor 5 telah keluar
+Nomor Plat AE6 Parkir di sektor 6 telah keluar
+Nomor Plat AE7 Parkir di sektor 7 telah keluar
+Nomor Plat AE8 Parkir di sektor 8 telah keluar
