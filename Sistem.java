@@ -43,7 +43,7 @@ public class Sistem extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
 
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jDialog1 = new javax.swing.JDialog();
@@ -533,9 +533,9 @@ public class Sistem extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         plat[6] = jTextField1.getText();
         jButton16.setVisible(true);
         jButton14.setVisible(false);
@@ -561,7 +561,7 @@ public class Sistem extends javax.swing.JFrame {
         } catch (IOException ex) {
             System.out.println("Error writing to file '" + fileName + "'");
         }
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }                                         
     private void Clock() {
         calendar.setTimeInMillis(System.currentTimeMillis());
         int hours = calendar.get(Calendar.HOUR_OF_DAY);
@@ -569,7 +569,7 @@ public class Sistem extends javax.swing.JFrame {
         int seconds = calendar.get(Calendar.SECOND);
         timex = String.valueOf(hours + ":" + minutes + ":" + seconds);
     }
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {                                          
 
         jButton11.setVisible(true);
         jButton13.setVisible(false);
@@ -578,9 +578,9 @@ public class Sistem extends javax.swing.JFrame {
         mdl2.addRow(new Object[]{plat[5], tanggal[5] + ", " + time[5]});
         jTable2.setModel(mdl2);
 
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }                                         
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         plat[4] = jTextField1.getText();
         jButton12.setVisible(true);
         jButton10.setVisible(false);
@@ -606,9 +606,9 @@ public class Sistem extends javax.swing.JFrame {
         } catch (IOException ex) {
             System.out.println("Error writing to file '" + fileName + "'");
         }
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }                                         
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         plat[5] = jTextField1.getText();
         jButton13.setVisible(true);
         jButton11.setVisible(false);
@@ -634,9 +634,9 @@ public class Sistem extends javax.swing.JFrame {
         } catch (IOException ex) {
             System.out.println("Error writing to file '" + fileName + "'");
         }
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }                                         
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
         jButton7.setVisible(true);
         jButton9.setVisible(false);
@@ -645,9 +645,9 @@ public class Sistem extends javax.swing.JFrame {
         mdl2.addRow(new Object[]{plat[3], tanggal[3] + ", " + time[3]});
         jTable2.setModel(mdl2);
 
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }                                        
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         plat[2] = jTextField1.getText();
         jButton8.setVisible(true);
         jButton6.setVisible(false);
@@ -673,9 +673,9 @@ public class Sistem extends javax.swing.JFrame {
         } catch (IOException ex) {
             System.out.println("Error writing to file '" + fileName + "'");
         }
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }                                        
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         plat[3] = jTextField1.getText();
         jButton9.setVisible(true);
         jButton7.setVisible(false);
@@ -702,9 +702,9 @@ public class Sistem extends javax.swing.JFrame {
             System.out.println("Error writing to file '" + fileName + "'");
         }
 
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }                                        
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         plat[7] = jTextField1.getText();
         jButton17.setVisible(true);
         jButton15.setVisible(false);
@@ -730,13 +730,9 @@ public class Sistem extends javax.swing.JFrame {
         } catch (IOException ex) {
             System.out.println("Error writing to file '" + fileName + "'");
         }
-    }//GEN-LAST:event_jButton15ActionPerformed
-    public String getAhh() {
-        String uhh = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0] + "\n"
-                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1];
-        return uhh;
-    }
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    }                                         
+  
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         plat[0] = jTextField1.getText();
         jButton2.setVisible(false);
         jButton3.setVisible(true);
@@ -745,7 +741,14 @@ public class Sistem extends javax.swing.JFrame {
         time[0] = timex;
         mdl.addRow(new Object[]{plat[0], tanggal[0] + ", " + time[0]});
         jTable1.setModel(mdl);
-        text = getAhh();
+        text = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0]
+                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1]
+                + "\nNo Plat : " + plat[2] + " Tanggal/Waktu Masuk : " + tanggal[2] + " " + time[2]
+                + "\nNo Plat : " + plat[3] + " Tanggal/Waktu Masuk : " + tanggal[3] + " " + time[3]
+                + "\nNo Plat : " + plat[4] + " Tanggal/Waktu Masuk : " + tanggal[4] + " " + time[4]
+                + "\nNo Plat : " + plat[5] + " Tanggal/Waktu Masuk : " + tanggal[5] + " " + time[5]
+                + "\nNo Plat : " + plat[6] + " Tanggal/Waktu Masuk : " + tanggal[6] + " " + time[6]
+                + "\nNo Plat : " + plat[7] + " Tanggal/Waktu Masuk : " + tanggal[7] + " " + time[7];
         try {
 
             FileWriter fileWriter = new FileWriter("save.txt");
@@ -757,22 +760,22 @@ public class Sistem extends javax.swing.JFrame {
         }
 
 
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }                                        
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         jDialog1.setVisible(true);
         jDialog1.setTitle("Data Parkir");
         jDialog1.setSize(410, 650);
         jDialog1.show();
 
 
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }                                        
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {                                            
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }                                           
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
         plat[1] = jTextField1.getText();
         jButton4.setVisible(false);
@@ -800,9 +803,9 @@ public class Sistem extends javax.swing.JFrame {
             System.out.println("Error writing to file '" + fileName + "'");
         }
 
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }                                        
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
         jButton2.setVisible(true);
         jButton3.setVisible(false);
@@ -811,9 +814,9 @@ public class Sistem extends javax.swing.JFrame {
         mdl2.addRow(new Object[]{plat[0], tanggal[0] + ", " + time[0]});
         jTable2.setModel(mdl2);
 
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }                                        
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
         jButton4.setVisible(true);
         jButton5.setVisible(false);
@@ -823,9 +826,9 @@ public class Sistem extends javax.swing.JFrame {
         jTable2.setModel(mdl2);
 
 
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }                                        
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {                                         
 
         jButton6.setVisible(true);
         jButton8.setVisible(false);
@@ -834,9 +837,9 @@ public class Sistem extends javax.swing.JFrame {
         mdl2.addRow(new Object[]{plat[2], tanggal[2] + ", " + time[2]});
         jTable2.setModel(mdl2);
 
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }                                        
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {                                          
 
         jButton10.setVisible(true);
         jButton12.setVisible(false);
@@ -845,9 +848,9 @@ public class Sistem extends javax.swing.JFrame {
         mdl2.addRow(new Object[]{plat[4], tanggal[4] + ", " + time[4]});
         jTable2.setModel(mdl2);
 
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }                                         
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         jButton14.setVisible(true);
         jButton16.setVisible(false);
         Clock();
@@ -855,9 +858,9 @@ public class Sistem extends javax.swing.JFrame {
         mdl2.addRow(new Object[]{plat[6], tanggal[6] + ", " + time[6]});
         jTable2.setModel(mdl2);
 
-    }//GEN-LAST:event_jButton16ActionPerformed
+    }                                         
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {                                          
 
         jButton15.setVisible(true);
         jButton17.setVisible(false);
@@ -866,25 +869,25 @@ public class Sistem extends javax.swing.JFrame {
         mdl2.addRow(new Object[]{plat[7], tanggal[7] + ", " + time[7]});
         jTable2.setModel(mdl2);
 
-    }//GEN-LAST:event_jButton17ActionPerformed
+    }                                         
 
-    private void jDialog1ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jDialog1ComponentShown
+    private void jDialog1ComponentShown(java.awt.event.ComponentEvent evt) {                                        
         jTable1.setModel(mdl);
-    }//GEN-LAST:event_jDialog1ComponentShown
+    }                                       
 
-    private void jTable2ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jTable2ComponentShown
+    private void jTable2ComponentShown(java.awt.event.ComponentEvent evt) {                                       
         jTable2.setModel(mdl2);
-    }//GEN-LAST:event_jTable2ComponentShown
+    }                                      
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         mdl.getDataVector().removeAllElements();
         mdl.fireTableDataChanged();
-        jTable1.setModel(mdl);    }//GEN-LAST:event_jButton18ActionPerformed
+        jTable1.setModel(mdl);    }                                         
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {                                          
         mdl2.getDataVector().removeAllElements();
         mdl2.fireTableDataChanged();
-        jTable2.setModel(mdl2);    }//GEN-LAST:event_jButton20ActionPerformed
+        jTable2.setModel(mdl2);    }                                         
 
     /**
      * @param args the command line arguments
@@ -921,7 +924,7 @@ public class Sistem extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -952,7 +955,7 @@ public class Sistem extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField1;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
     int baris = 0;
     static Object kolom[] = {" Nomor Plat ", " Tanggal "};
     DefaultTableModel mdl = new DefaultTableModel(kolom, baris);
@@ -960,6 +963,5 @@ public class Sistem extends javax.swing.JFrame {
     int baris2 = 0;
     static Object kolom2[] = {" Nomor Plat ", " Tanggal "};
     DefaultTableModel mdl2 = new DefaultTableModel(kolom, baris);
-
 
 }
