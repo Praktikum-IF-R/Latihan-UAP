@@ -12,24 +12,28 @@ package Latihan;
 import javax.swing.table.DefaultTableModel;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
+import java.io.*;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Sistem extends javax.swing.JFrame {
-   
+
     String plat[] = new String[8];
     String tanggal[] = new String[8];
     SimpleDateFormat date = new SimpleDateFormat("d-MMM-yyy");
     Calendar calendar = Calendar.getInstance();
-    String time [] = {"","","","","","","",""};
+    String time[] = {"", "", "", "", "", "", "", ""};
     String timex;
+    String fileName = "save.txt";
+    String text = "";
 
     /**
      * Creates new form Sistem
      */
     public Sistem() {
         initComponents();
-         setTitle("Program Parkir");
-        
+        setTitle("Program Parkir");
+
     }
 
     /**
@@ -537,24 +541,41 @@ public class Sistem extends javax.swing.JFrame {
         jButton14.setVisible(false);
         tanggal[6] = date.format(calendar.getTime());
         Clock();
-        time[6]=timex;
-        mdl.addRow(new Object[]{plat[6],tanggal[6]+", "+time[6]});
+        time[6] = timex;
+        mdl.addRow(new Object[]{plat[6], tanggal[6] + ", " + time[6]});
         jTable1.setModel(mdl);
+        text = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0]
+                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1]
+                + "\nNo Plat : " + plat[2] + " Tanggal/Waktu Masuk : " + tanggal[2] + " " + time[2]
+                + "\nNo Plat : " + plat[3] + " Tanggal/Waktu Masuk : " + tanggal[3] + " " + time[3]
+                + "\nNo Plat : " + plat[4] + " Tanggal/Waktu Masuk : " + tanggal[4] + " " + time[4]
+                + "\nNo Plat : " + plat[5] + " Tanggal/Waktu Masuk : " + tanggal[5] + " " + time[5]
+                + "\nNo Plat : " + plat[6] + " Tanggal/Waktu Masuk : " + tanggal[6] + " " + time[6]
+                + "\nNo Plat : " + plat[7] + " Tanggal/Waktu Masuk : " + tanggal[7] + " " + time[7];
+        try {
+
+            FileWriter fileWriter = new FileWriter("save.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(text);
+            bufferedWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Error writing to file '" + fileName + "'");
+        }
     }//GEN-LAST:event_jButton14ActionPerformed
-        private void Clock() {
+    private void Clock() {
         calendar.setTimeInMillis(System.currentTimeMillis());
         int hours = calendar.get(Calendar.HOUR_OF_DAY);
         int minutes = calendar.get(Calendar.MINUTE);
         int seconds = calendar.get(Calendar.SECOND);
-        timex = String.valueOf(hours+":"+minutes+":"+seconds);
-    } 
+        timex = String.valueOf(hours + ":" + minutes + ":" + seconds);
+    }
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
 
         jButton11.setVisible(true);
         jButton13.setVisible(false);
         Clock();
-        time[0]=timex;
-        mdl2.addRow(new Object[]{plat[5],tanggal[5]+", "+time[5]});
+        time[0] = timex;
+        mdl2.addRow(new Object[]{plat[5], tanggal[5] + ", " + time[5]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton13ActionPerformed
@@ -565,9 +586,26 @@ public class Sistem extends javax.swing.JFrame {
         jButton10.setVisible(false);
         tanggal[4] = date.format(calendar.getTime());
         Clock();
-        time[4]=timex;
-        mdl.addRow(new Object[]{plat[4],tanggal[4]+", "+time[4]});
+        time[4] = timex;
+        mdl.addRow(new Object[]{plat[4], tanggal[4] + ", " + time[4]});
         jTable1.setModel(mdl);
+        text = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0]
+                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1]
+                + "\nNo Plat : " + plat[2] + " Tanggal/Waktu Masuk : " + tanggal[2] + " " + time[2]
+                + "\nNo Plat : " + plat[3] + " Tanggal/Waktu Masuk : " + tanggal[3] + " " + time[3]
+                + "\nNo Plat : " + plat[4] + " Tanggal/Waktu Masuk : " + tanggal[4] + " " + time[4]
+                + "\nNo Plat : " + plat[5] + " Tanggal/Waktu Masuk : " + tanggal[5] + " " + time[5]
+                + "\nNo Plat : " + plat[6] + " Tanggal/Waktu Masuk : " + tanggal[6] + " " + time[6]
+                + "\nNo Plat : " + plat[7] + " Tanggal/Waktu Masuk : " + tanggal[7] + " " + time[7];
+        try {
+
+            FileWriter fileWriter = new FileWriter("save.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(text);
+            bufferedWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Error writing to file '" + fileName + "'");
+        }
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
@@ -576,9 +614,26 @@ public class Sistem extends javax.swing.JFrame {
         jButton11.setVisible(false);
         tanggal[5] = date.format(calendar.getTime());
         Clock();
-        time[5]=timex;
-        mdl.addRow(new Object[]{plat[5],tanggal[5]+", "+time[5]});
+        time[5] = timex;
+        mdl.addRow(new Object[]{plat[5], tanggal[5] + ", " + time[5]});
         jTable1.setModel(mdl);
+        text = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0]
+                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1]
+                + "\nNo Plat : " + plat[2] + " Tanggal/Waktu Masuk : " + tanggal[2] + " " + time[2]
+                + "\nNo Plat : " + plat[3] + " Tanggal/Waktu Masuk : " + tanggal[3] + " " + time[3]
+                + "\nNo Plat : " + plat[4] + " Tanggal/Waktu Masuk : " + tanggal[4] + " " + time[4]
+                + "\nNo Plat : " + plat[5] + " Tanggal/Waktu Masuk : " + tanggal[5] + " " + time[5]
+                + "\nNo Plat : " + plat[6] + " Tanggal/Waktu Masuk : " + tanggal[6] + " " + time[6]
+                + "\nNo Plat : " + plat[7] + " Tanggal/Waktu Masuk : " + tanggal[7] + " " + time[7];
+        try {
+
+            FileWriter fileWriter = new FileWriter("save.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(text);
+            bufferedWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Error writing to file '" + fileName + "'");
+        }
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -586,8 +641,8 @@ public class Sistem extends javax.swing.JFrame {
         jButton7.setVisible(true);
         jButton9.setVisible(false);
         Clock();
-        time[0]=timex;
-        mdl2.addRow(new Object[]{plat[3],tanggal[3]+", "+time[3]});
+        time[0] = timex;
+        mdl2.addRow(new Object[]{plat[3], tanggal[3] + ", " + time[3]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton9ActionPerformed
@@ -598,9 +653,26 @@ public class Sistem extends javax.swing.JFrame {
         jButton6.setVisible(false);
         tanggal[2] = date.format(calendar.getTime());
         Clock();
-        time[2]=timex;
-        mdl.addRow(new Object[]{plat[2],tanggal[2]+", "+time[2]});
+        time[2] = timex;
+        mdl.addRow(new Object[]{plat[2], tanggal[2] + ", " + time[2]});
         jTable1.setModel(mdl);
+        text = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0]
+                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1]
+                + "\nNo Plat : " + plat[2] + " Tanggal/Waktu Masuk : " + tanggal[2] + " " + time[2]
+                + "\nNo Plat : " + plat[3] + " Tanggal/Waktu Masuk : " + tanggal[3] + " " + time[3]
+                + "\nNo Plat : " + plat[4] + " Tanggal/Waktu Masuk : " + tanggal[4] + " " + time[4]
+                + "\nNo Plat : " + plat[5] + " Tanggal/Waktu Masuk : " + tanggal[5] + " " + time[5]
+                + "\nNo Plat : " + plat[6] + " Tanggal/Waktu Masuk : " + tanggal[6] + " " + time[6]
+                + "\nNo Plat : " + plat[7] + " Tanggal/Waktu Masuk : " + tanggal[7] + " " + time[7];
+        try {
+
+            FileWriter fileWriter = new FileWriter("save.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(text);
+            bufferedWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Error writing to file '" + fileName + "'");
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -609,9 +681,26 @@ public class Sistem extends javax.swing.JFrame {
         jButton7.setVisible(false);
         tanggal[3] = date.format(calendar.getTime());
         Clock();
-        time[3]=timex;
-        mdl.addRow(new Object[]{plat[3],tanggal[3]+", "+time[3]});
+        time[3] = timex;
+        mdl.addRow(new Object[]{plat[3], tanggal[3] + ", " + time[3]});
         jTable1.setModel(mdl);
+        text = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0]
+                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1]
+                + "\nNo Plat : " + plat[2] + " Tanggal/Waktu Masuk : " + tanggal[2] + " " + time[2]
+                + "\nNo Plat : " + plat[3] + " Tanggal/Waktu Masuk : " + tanggal[3] + " " + time[3]
+                + "\nNo Plat : " + plat[4] + " Tanggal/Waktu Masuk : " + tanggal[4] + " " + time[4]
+                + "\nNo Plat : " + plat[5] + " Tanggal/Waktu Masuk : " + tanggal[5] + " " + time[5]
+                + "\nNo Plat : " + plat[6] + " Tanggal/Waktu Masuk : " + tanggal[6] + " " + time[6]
+                + "\nNo Plat : " + plat[7] + " Tanggal/Waktu Masuk : " + tanggal[7] + " " + time[7];
+        try {
+
+            FileWriter fileWriter = new FileWriter("save.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(text);
+            bufferedWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Error writing to file '" + fileName + "'");
+        }
 
     }//GEN-LAST:event_jButton7ActionPerformed
 
@@ -621,21 +710,52 @@ public class Sistem extends javax.swing.JFrame {
         jButton15.setVisible(false);
         tanggal[7] = date.format(calendar.getTime());
         Clock();
-        time[7]=timex;
-        mdl.addRow(new Object[]{plat[7],tanggal[7]+", "+time[7]});
+        time[7] = timex;
+        mdl.addRow(new Object[]{plat[7], tanggal[7] + ", " + time[7]});
         jTable1.setModel(mdl);
-    }//GEN-LAST:event_jButton15ActionPerformed
+        text = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0]
+                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1]
+                + "\nNo Plat : " + plat[2] + " Tanggal/Waktu Masuk : " + tanggal[2] + " " + time[2]
+                + "\nNo Plat : " + plat[3] + " Tanggal/Waktu Masuk : " + tanggal[3] + " " + time[3]
+                + "\nNo Plat : " + plat[4] + " Tanggal/Waktu Masuk : " + tanggal[4] + " " + time[4]
+                + "\nNo Plat : " + plat[5] + " Tanggal/Waktu Masuk : " + tanggal[5] + " " + time[5]
+                + "\nNo Plat : " + plat[6] + " Tanggal/Waktu Masuk : " + tanggal[6] + " " + time[6]
+                + "\nNo Plat : " + plat[7] + " Tanggal/Waktu Masuk : " + tanggal[7] + " " + time[7];
+        try {
 
+            FileWriter fileWriter = new FileWriter("save.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(text);
+            bufferedWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Error writing to file '" + fileName + "'");
+        }
+    }//GEN-LAST:event_jButton15ActionPerformed
+    public String getAhh() {
+        String uhh = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0] + "\n"
+                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1];
+        return uhh;
+    }
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         plat[0] = jTextField1.getText();
         jButton2.setVisible(false);
         jButton3.setVisible(true);
         tanggal[0] = date.format(calendar.getTime());
         Clock();
-        time[0]=timex;
-        mdl.addRow(new Object[]{plat[0],tanggal[0]+", "+time[0]});
+        time[0] = timex;
+        mdl.addRow(new Object[]{plat[0], tanggal[0] + ", " + time[0]});
         jTable1.setModel(mdl);
-        
+        text = getAhh();
+        try {
+
+            FileWriter fileWriter = new FileWriter("save.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(text);
+            bufferedWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Error writing to file '" + fileName + "'");
+        }
+
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -659,10 +779,27 @@ public class Sistem extends javax.swing.JFrame {
         jButton5.setVisible(true);
         tanggal[1] = date.format(calendar.getTime());
         Clock();
-        time[1]=timex;
-        mdl.addRow(new Object[]{plat[1],tanggal[1]+", "+time[1]});
+        time[1] = timex;
+        mdl.addRow(new Object[]{plat[1], tanggal[1] + ", " + time[1]});
         jTable1.setModel(mdl);
-        
+        text = "No Plat : " + plat[0] + " Tanggal/Waktu Masuk : " + tanggal[0] + " " + time[0]
+                + "\nNo Plat : " + plat[1] + " Tanggal/Waktu Masuk : " + tanggal[1] + " " + time[1]
+                + "\nNo Plat : " + plat[2] + " Tanggal/Waktu Masuk : " + tanggal[2] + " " + time[2]
+                + "\nNo Plat : " + plat[3] + " Tanggal/Waktu Masuk : " + tanggal[3] + " " + time[3]
+                + "\nNo Plat : " + plat[4] + " Tanggal/Waktu Masuk : " + tanggal[4] + " " + time[4]
+                + "\nNo Plat : " + plat[5] + " Tanggal/Waktu Masuk : " + tanggal[5] + " " + time[5]
+                + "\nNo Plat : " + plat[6] + " Tanggal/Waktu Masuk : " + tanggal[6] + " " + time[6]
+                + "\nNo Plat : " + plat[7] + " Tanggal/Waktu Masuk : " + tanggal[7] + " " + time[7];
+        try {
+
+            FileWriter fileWriter = new FileWriter("save.txt");
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.write(text);
+            bufferedWriter.close();
+        } catch (IOException ex) {
+            System.out.println("Error writing to file '" + fileName + "'");
+        }
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -670,8 +807,8 @@ public class Sistem extends javax.swing.JFrame {
         jButton2.setVisible(true);
         jButton3.setVisible(false);
         Clock();
-        time[0]=timex;
-        mdl2.addRow(new Object[]{plat[0],tanggal[0]+", "+time[0]});
+        time[0] = timex;
+        mdl2.addRow(new Object[]{plat[0], tanggal[0] + ", " + time[0]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -681,8 +818,8 @@ public class Sistem extends javax.swing.JFrame {
         jButton4.setVisible(true);
         jButton5.setVisible(false);
         Clock();
-        time[1]=timex;
-        mdl2.addRow(new Object[]{plat[1],tanggal[1]+", "+time[1]});
+        time[1] = timex;
+        mdl2.addRow(new Object[]{plat[1], tanggal[1] + ", " + time[1]});
         jTable2.setModel(mdl2);
 
 
@@ -693,8 +830,8 @@ public class Sistem extends javax.swing.JFrame {
         jButton6.setVisible(true);
         jButton8.setVisible(false);
         Clock();
-        time[2]=timex;
-        mdl2.addRow(new Object[]{plat[2],tanggal[2]+", "+time[2]});
+        time[2] = timex;
+        mdl2.addRow(new Object[]{plat[2], tanggal[2] + ", " + time[2]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton8ActionPerformed
@@ -704,8 +841,8 @@ public class Sistem extends javax.swing.JFrame {
         jButton10.setVisible(true);
         jButton12.setVisible(false);
         Clock();
-        time[4]=timex;
-        mdl2.addRow(new Object[]{plat[4],tanggal[4]+", "+time[4]});
+        time[4] = timex;
+        mdl2.addRow(new Object[]{plat[4], tanggal[4] + ", " + time[4]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton12ActionPerformed
@@ -714,8 +851,8 @@ public class Sistem extends javax.swing.JFrame {
         jButton14.setVisible(true);
         jButton16.setVisible(false);
         Clock();
-        time[0]=timex;
-        mdl2.addRow(new Object[]{plat[6],tanggal[6]+", "+time[6]});
+        time[0] = timex;
+        mdl2.addRow(new Object[]{plat[6], tanggal[6] + ", " + time[6]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton16ActionPerformed
@@ -725,8 +862,8 @@ public class Sistem extends javax.swing.JFrame {
         jButton15.setVisible(true);
         jButton17.setVisible(false);
         Clock();
-        time[0]=timex;
-        mdl2.addRow(new Object[]{plat[7],tanggal[7]+", "+time[7]});
+        time[0] = timex;
+        mdl2.addRow(new Object[]{plat[7], tanggal[7] + ", " + time[7]});
         jTable2.setModel(mdl2);
 
     }//GEN-LAST:event_jButton17ActionPerformed

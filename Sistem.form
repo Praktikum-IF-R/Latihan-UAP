@@ -149,9 +149,6 @@
         </Container>
         <Component class="javax.swing.JButton" name="jButton18">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/application-exit-symbolic.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Clear Data Masuk"/>
           </Properties>
           <Events>
@@ -160,9 +157,6 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton20">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/application-exit-symbolic.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Clear Data Keluar"/>
           </Properties>
           <Events>
@@ -323,9 +317,6 @@
   <SubComponents>
     <Component class="javax.swing.JButton" name="jButton14">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/inbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Masuk"/>
       </Properties>
       <Events>
@@ -334,9 +325,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton17">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/outbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Events>
@@ -348,9 +336,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton12">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/outbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Events>
@@ -362,9 +347,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton13">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/outbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Events>
@@ -376,9 +358,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton10">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/inbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Masuk"/>
       </Properties>
       <Events>
@@ -387,9 +366,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton11">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/inbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Masuk"/>
       </Properties>
       <Events>
@@ -398,9 +374,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton8">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/outbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Events>
@@ -412,9 +385,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton9">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/outbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Events>
@@ -426,9 +396,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton6">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/inbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Masuk"/>
       </Properties>
       <Events>
@@ -437,9 +404,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton7">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/inbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Masuk"/>
       </Properties>
       <Events>
@@ -448,9 +412,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton16">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/outbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Events>
@@ -462,9 +423,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton15">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/inbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Masuk"/>
       </Properties>
       <Events>
@@ -473,9 +431,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton5">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/outbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Events>
@@ -487,9 +442,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/inbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Masuk"/>
       </Properties>
       <Events>
@@ -498,9 +450,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/application-exit-symbolic.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Tampilkan Data"/>
       </Properties>
       <Events>
@@ -519,9 +468,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton4">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/inbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Masuk"/>
       </Properties>
       <Events>
@@ -530,9 +476,6 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="/home/imgeek/NetBeansProjects/GUI/src/Latihan/outbox-symbolic (1).png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Events>
