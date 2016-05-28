@@ -13,7 +13,6 @@ public class parkir extends Frame {
         lbJudul = new JLabel("Sistem Parkir");
         lbJudul.setFont(new Font("Arial", 1, 18));
         add(lbJudul).setBounds(180, 30, 200, 30);
-        
         lbPlat = new JLabel("Nomor Plat :");
         this.add(lbPlat).setBounds(30, 90, 90, 20);
         plat = new JTextField("Plat Nomor...");
